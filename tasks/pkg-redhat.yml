@@ -1,0 +1,12 @@
+---
+- name: Install epel
+  yum: pkg=epel-release
+
+- name: Install Tomcat rpm
+  yum: pkg=java,tomcat update_cache=yes
+
+- name: Start service
+  service:
+    name: tomcat7
+    state: started
+    enabled: yes
