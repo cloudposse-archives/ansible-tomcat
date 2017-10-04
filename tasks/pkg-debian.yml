@@ -1,0 +1,9 @@
+---
+- name: Install Tomcat deb
+  apt: name=default-jdk,tomcat7 update_cache=yes cache_valid_time=3600
+
+- name: Start service
+  service:
+    name: tomcat7
+    state: started
+    enabled: yes
