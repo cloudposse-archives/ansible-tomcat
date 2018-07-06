@@ -1,0 +1,50 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: ansible-tomcat
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Canonical GitHub repo
+github_repo: cloudposse/ansible-tomcat
+
+# Badges to display
+badges:
+  - name: "Build Status"
+    image: "https://travis-ci.org/cloudposse/ansible-tomcat.svg?branch=master"
+    url: "https://travis-ci.org/cloudposse/ansible-tomcat"
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/cloudposse/ansible-tomcat.svg"
+    url: "https://travis-ci.org/cloudposse/ansible-tomcat/releases"
+  - name: "Slack Community"
+    image: "https://slack.cloudposse.com/badge.svg"
+    url: "https://slack.cloudposse.com"
+
+# Short description of this project
+description: |-
+  This ansible role installs [Apache Tomcat ](https://tomcat.apache.org/).
+
+  >_Warning_
+  (If needed) the java version installed in Ubuntu 14.04 is 1.7.   Centos 6 , Centos 7 and Ubuntu 16.04 will install java 1.8 .
+  Also tomcat version is not fixed, this role will always install the latest version of the tomcat package available at the repositories.
+
+examples: |-
+  This an example of how to install this role:
+    ```yaml
+    - hosts: server
+      roles:
+      - { role: ansible-tomcat }
+    ```
+
+# Contributors to this project
+contributors:
+  - name: "Sergey Vasilyev"
+    github: "s2504s"
